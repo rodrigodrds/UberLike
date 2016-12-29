@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 declare var google: any;
 
@@ -7,6 +7,8 @@ declare var google: any;
   templateUrl: 'build/components/map/map.html'
 })
 export class MapDirective implements OnInit {
+
+  @Input() isPickupRequested: boolean;
 
   public map;
 

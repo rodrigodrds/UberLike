@@ -5,4 +5,15 @@
       height: 100%;
       width: 100%;
   }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .request-controls {
+    text-align: center;
+    background: linear-gradient(transparent, map-get($colors , light ));
+  }
 }
