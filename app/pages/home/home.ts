@@ -8,7 +8,18 @@ import { MapDirective } from './../../components/map/map';
   directives: [MapDirective]
 })
 export class HomePage {
-  constructor(private navController: NavController) {
 
+  public isPickupRequested: boolean;
+
+  constructor(private navController: NavController) {
+    this.isPickupRequested = false;
+  }
+
+  confirmPickup(){
+    this.isPickupRequested = true;
+  }
+
+  cancelPickup(){
+    this.isPickupRequested = false;
   }
 }
